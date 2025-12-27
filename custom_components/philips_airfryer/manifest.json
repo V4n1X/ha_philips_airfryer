@@ -1,0 +1,16 @@
+{
+  "domain": "philips_airfryer",
+  "name": "Philips Airfryer",
+  "config_flow": true,
+  "version": "1.0.0",
+  "codeowners": [
+    "@V4n1X"
+  ],
+  "documentation": "https://github.com/V4n1X/ha_philips_airfryer/blob/master/README.md",
+  "issue_tracker": "https://github.com/V4n1X/ha_philips_airfryer/issues",
+  "requirements": [
+    "requests"
+  ],
+  "dependencies": [],
+  "iot_class": "local_polling"
+}

@@ -1,0 +1,132 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Einrichtungsmethode wählen",
+                "menu_options": {
+                    "manual": "Manuell eingeben",
+                    "upload_file": "Aus Datei hochladen (network_node.db)"
+                }
+            },
+            "manual": {
+                "title": "Verbinde mit Philips Airfryer",
+                "data": {
+                    "host": "IP-Adresse",
+                    "client_id": "Client ID",
+                    "client_secret": "Client Secret",
+                    "airspeed": "Airspeed-Unterstützung (HD9880)",
+                    "probe": "Thermometer-Unterstützung",
+                    "replace_timestamp": "Zeitstempel lokal erzeugen (wenn Internet blockiert)",
+                    "time_remaining": "JSON Key Restzeit (Standard: disp_time)",
+                    "time_total": "JSON Key Gesamtzeit (Standard: total_time)",
+                    "command_url": "API Endpunkt (Standard: /di/v1/products/1/airfryer)",
+                    "update_interval": "Update Intervall (Sekunden)"
+                }
+            },
+            "upload_file": {
+                "title": "Datenbank hochladen",
+                "description": "Lade die Datei 'network_node.db' direkt hier hoch. Die Zugangsdaten werden automatisch ausgelesen.",
+                "data": {
+                    "file_id": "Datenbank-Datei (.db)"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "no_file_selected": "Keine Datei ausgewählt",
+            "db_read_error": "Fehler beim Lesen der Datenbank",
+            "db_empty_or_invalid": "Datenbank enthält keine gültigen Airfryer-Daten"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "airspeed": "Airspeed-Unterstützung (HD9880)",
+                    "probe": "Thermometer-Unterstützung",
+                    "replace_timestamp": "Zeitstempel lokal erzeugen (wenn Internet blockiert)",
+                    "time_remaining": "JSON Key Restzeit (Standard: disp_time)",
+                    "time_total": "JSON Key Gesamtzeit (Standard: total_time)",
+                    "command_url": "API Endpunkt (Standard: /di/v1/products/1/airfryer)",
+                    "update_interval": "Update Intervall (Sekunden)"
+                }
+            }
+        }
+    },
+    "entity": {
+        "switch": { "power": { "name": "Betrieb" } },
+        "number": {
+            "target_temp": { "name": "Ziel-Temperatur" },
+            "target_time": { "name": "Kochzeit" },
+            "airspeed": { "name": "Lüftergeschwindigkeit" }
+        },
+        "button": {
+            "start": { "name": "Start / Weiter" },
+            "pause": { "name": "Pause" },
+            "stop": { "name": "Stop" }
+        },
+        "sensor": {
+            "status": {
+                "name": "Status",
+                "state": {
+                    "cooking": "Kocht",
+                    "mainmenu": "Hauptmenü",
+                    "pause": "Pausiert",
+                    "precook": "Bereit",
+                    "powersave": "Energiesparmodus",
+                    "standby": "Standby",
+                    "finish": "Fertig",
+                    "offline": "Nicht erreichbar",
+                    "parasetting": "Einstellungen",
+                    "user_action": "Nutzeraktion"
+                }
+            },
+            "current_temp": { "name": "Aktuelle Temperatur" },
+            "probe_temp": { "name": "Kerntemperatur" },
+            "progress": { "name": "Fortschritt" },
+            "dialog": { "name": "Meldung" },
+            "token": { "name": "Aktueller API Token" },
+            "diag_disp_time": { "name": "Restzeit (Rohwert)" },
+            "diag_total_time": { "name": "Gesamtzeit (Rohwert)" },
+            "diag_timestamp": { "name": "Zeitstempel" },
+            "fw_state": { 
+                "name": "Firmware Status",
+                "state": {
+                    "idle": "Inaktiv",
+                    "downloading": "Lädt herunter"
+                }
+            },
+            "voltage": { "name": "Spannung" },
+            "internal_temp": { "name": "Interne Sensor-Temperatur" },
+            "error_code": { "name": "Fehlercode" },
+            "cooking_method": { "name": "Programm-ID" },
+            "prev_status": { 
+                "name": "Vorheriger Status",
+                "state": {
+                    "cooking": "Kocht",
+                    "mainmenu": "Hauptmenü",
+                    "pause": "Pausiert",
+                    "precook": "Bereit",
+                    "powersave": "Energiesparmodus",
+                    "standby": "Standby",
+                    "finish": "Fertig",
+                    "offline": "Nicht erreichbar",
+                    "parasetting": "Einstellungen",
+                    "user_action": "Nutzeraktion"
+                } 
+            },
+            "cooking_id": { "name": "Koch-ID" },
+            "step_id": { "name": "Schritt-ID" },
+            "cur_stage": { "name": "Aktuelle Stufe" },
+            "autocook_program": { "name": "AutoCook Programm" },
+            "recipe_id": { "name": "Rezept ID" }
+        },
+        "binary_sensor": {
+            "drawer": { "name": "Schublade" },
+            "probe_connected": { "name": "Thermometer" },
+            "preheat": { "name": "Vorheizen" },
+            "resting": { "name": "Ruhephase" },
+            "probe_required": { "name": "Thermometer benötigt" }
+        }
+    }
+}

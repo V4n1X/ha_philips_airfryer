@@ -1,0 +1,6 @@
+{
+  "name": "Philips Airfryer",
+  "homeassistant": "2025.8.0",
+  "hacs": "1.18.0",
+  "render_readme": true
+}
