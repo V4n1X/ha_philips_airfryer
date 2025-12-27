@@ -127,7 +127,7 @@ A: The Airfryer disconnects from WiFi after a period of inactivity (Deep Sleep).
 ## 👏 Credits
 
 Special thanks to **[noxhirsch](https://github.com/noxhirsch)** for the original work on [Pyscript-Philips-Airfryer](https://github.com/noxhirsch/Pyscript-Philips-Airfryer), which served as the foundation for this integration.
-Also, a big thank you to the community in the [Home Assistant Forum](https://community.home-assistant.io/t/philips-airfryer-nutriu-integration-alexa-only/368260) for their research and support!
+Also, a big thank you to the community in the [Home Assistant Forum](https://community.home-assistant.io/t/philips-airfryer-nutriu-integration-alexa-only/) for their research and support!
 
 ## ☕ Support
 
