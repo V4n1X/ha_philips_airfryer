@@ -125,7 +125,7 @@ A: Der Airfryer trennt nach einer gewissen Zeit der Inaktivität die WLAN-Verbin
 ## 👏 Danksagung
 
 Ein besonderer Dank geht an **[noxhirsch](https://github.com/noxhirsch)** für die Vorarbeit am [Pyscript-Philips-Airfryer](https://github.com/noxhirsch/Pyscript-Philips-Airfryer), welches als Basis für diese Integration diente.
-Ebenfalls vielen Dank an die Community im [Home Assistant Forum](https://community.home-assistant.io/t/philips-airfryer-nutriu-integration-alexa-only/368260) für die Recherche und Unterstützung!
+Ebenfalls vielen Dank an die Community im [Home Assistant Forum](https://community.home-assistant.io/t/philips-airfryer-nutriu-integration-alexa-only/) für die Recherche und Unterstützung!
 
 ## ☕ Support
 
